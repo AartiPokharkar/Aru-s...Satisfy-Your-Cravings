@@ -1,0 +1,51 @@
+body {
+    margin: auto;
+    background-color: #faf8f6;
+}
+
+/*--Header Start--*/
+#header {
+    height: 60px;
+    background-color: #851010;
+
+}
+
+#icon {
+    position: absolute;
+    margin-left: 20px;
+}
+
+/*--Header End--*/
+/*--ListingContainer Start--*/
+#listingContainer {
+    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.listingHeading {
+    font-family: cursive;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.filter{
+    height: 500px;
+    width: 20%;
+    float: left;
+    border: 2px solid green;
+}
+
+.content{
+    height: 650px;
+    width: 74%;
+    margin-left: 5%;
+    float: left;
+    border: 2px solid green;
+}
+/*--ListingContainer End--*/

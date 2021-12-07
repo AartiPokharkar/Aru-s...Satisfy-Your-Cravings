@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+}
+
+/*--Header Start--*/
+#header {
+    height: 60px;
+    background-color: chocolate;
+
+}
+
+#icon {
+    position: absolute;
+    margin-left: 20px;
+}
+
+/*--Header End--*/
+#search{
+    height:400px;
+    background-image: url("https://i.ibb.co/82XSbNf/bck3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 400px;
+}
+#QuickSearch{
+    height:500px;
+    border: 2px solid blue;
+}
+#logo{
+    background:radial-gradient(red,yellow);
+    height:110px;
+    width:110px;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 2%;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+}
+#logo > span{
+    margin-left: 1%;
+    margin-top: 20%;
+    position: absolute;
+}
+
+#heading{
+    margin-left: 34%;
+    margin-top: 12%;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
+.dropdown{
+    height: 55px;
+    width: 40%;
+    margin-left: 32%;
+    margin-top: 18%;
+    position: absolute;
+}
+select{
+    height: 55px;
+    width: 35%;
+}
+.restaurantSelect{
+    width: 50%;
+}

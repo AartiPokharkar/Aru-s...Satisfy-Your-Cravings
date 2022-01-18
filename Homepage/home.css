@@ -1,67 +1,292 @@
 body {
     margin: auto;
-    background-color: lightgoldenrodyellow;
+    background-color: #e9d4a8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color : #333;
+}
+#coupon{
+    height:500px;
+    width:650px;
+    background-image: url("https://i.ibb.co/m54TLS8/coupon1.jpg");
+    visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: index 100 !important;
+    margin-left :28%;
+    position: relative;
+}
+button:not(:disabled) {
+    cursor: pointer;
+    float: right;
+}
+.mydark{
+    background-color: #36332c;
+    color: white;
 }
 
-/*--Header Start--*/
-#header {
+
+/*--Nav Start--*/
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #edb265;
     height: 60px;
-    background-color: chocolate;
-
 }
 
-#icon {
-    position: absolute;
-    margin-left: 20px;
+#login {
+    color: #312320;
+    font-size: 20px;
+}
+#login:hover{
+    color: white;
+}
+#ml {
+    margin-left: 10px;
+    color: #080808;
+    margin-right: 30px;
+    font-size: 20px;
 }
 
 /*--Header End--*/
-#search{
-    height:400px;
+/*--Search Start--*/
+
+#search {
+    height: 450px;
     background-image: url("https://i.ibb.co/82XSbNf/bck3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 400px;
+    background-size: 100% 450px;
 }
-#QuickSearch{
-    height:500px;
-    border: 2px solid blue;
-}
-#logo{
-    background:radial-gradient(red,yellow);
-    height:110px;
-    width:110px;
+#logo {
+    background: radial-gradient(#bf0f0f, yellow);
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     margin-left: 45%;
-    margin-top: 2%;
+    margin-top: 4%;
     position: absolute;
-    font-size: 50px;
+    font-size: 45px;
     color: white;
+    animation: movelogo 10s infinite;
 }
-#logo > span{
-    margin-left: 1%;
-    margin-top: 20%;
+
+@keyframes movelogo {
+    0% {margin-left: 45%;}
+    25% {margin-left: 85%;}
+    75% {margin-left: 5%;}
+    100% {margin-left: 45%;}
+}
+
+#logo>span {
+    margin-left: 4.5%;
+    margin-top: 18%;
     position: absolute;
 }
 
-#heading{
-    margin-left: 34%;
-    margin-top: 12%;
+#heading {
+    margin-left: 32%;
+    margin-top: 14%;
     position: absolute;
     font-size: 30px;
     color: white;
 }
-.dropdown{
+
+.dropdown {
     height: 55px;
     width: 40%;
-    margin-left: 32%;
-    margin-top: 18%;
+    margin-left: 33%;
+    margin-top: 20%;
     position: absolute;
 }
-select{
+
+select {
     height: 55px;
     width: 35%;
 }
-.restaurantSelect{
-    width: 50%;
+
+.restaurantSelect {
+    width: 45%;
+}
+
+/*--Search End--*/
+/*--QuickSearch Start--*/
+#QuickSearch {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#QuickHeading {
+    display: block;
+    color: #b33114;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#QuickSubHeading {
+    line-height: 2;
+    color: #c99653;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.card {
+    margin-top: 20px;
+    animation: dance 10s infinite;
+}
+
+@keyframes dance{
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    background-color: #c99653;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+}
+
+.card-title {
+    color: #691908;
+}
+
+.card-text {
+    color: rgb(14, 12, 12);
+}
+
+/*--QuickSearch End--*/
+/*--Footer--*/
+footer {
+    padding-top: 1%;
+}
+
+/*--Footer End--*/
+/*-- Media Query -- */
+@media screen and (max-width:1600px) {}
+
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1200px) {
+    #heading {
+        margin-left: 33%;
+        margin-top: 16%;
+
+    }
+
+    .dropdown {
+        margin-left: 33%;
+        margin-top: 22%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .tileContainer {
+        width: 43%;
+    }
+
+    #logo {
+        margin-left: 45%;
+        margin-top: 5%;
+    }
+
+    #heading {
+        margin-left: 31%;
+        margin-top: 19%;
+
+    }
+
+    .dropdown {
+        margin-left: 35%;
+        margin-top: 26%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #QuickHeading {
+        margin-left: 10%;
+    }
+
+    #QuickSubHeading {
+        margin-left: 10%;
+    }
+
+    .tileContainer {
+        height: 230px;
+        width: 80%;
+        margin-top: 2.5%;
+        margin-left: 10%;
+    }
+
+    .tileComponent1>img {
+        width: 100%;
+        height: 165px;
+    }
+
+    #logo {
+        margin-left: 45%;
+        margin-top: 6%;
+    }
+
+    #heading {
+        margin-left: 28%;
+        margin-top: 24%;
+
+    }
+
+    .dropdown {
+        margin-left: 35%;
+        margin-top: 32%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #QuickHeading {
+        margin-left: 0%;
+    }
+
+    #QuickSubHeading {
+        margin-left: 0%;
+    }
+
+    .tileContainer {
+        height: 250px;
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .tileComponent1>img {
+        width: 100%;
+        height: 180px;
+    }
+
+    #logo {
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+
+    #heading {
+        margin-left: 10%;
+        margin-top: 42%;
+        text-align: center;
+
+    }
+
+    .dropdown {
+        margin-left: 33%;
+        margin-top: 60%;
+    }
 }

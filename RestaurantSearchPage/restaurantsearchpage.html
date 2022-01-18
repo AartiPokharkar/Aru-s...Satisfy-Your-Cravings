@@ -14,10 +14,20 @@
     <!--Header Start-->
     <Header id="header">
         <div id="icon">
-            <a href="../Homepage/home.html"><img src="https://i.ibb.co/M604mv0/logo22.png" alt="logo22" /></a>
+            <a href="../Homepage/index.html">
+                <img src="https://i.ibb.co/vYbtL4h/finallogo.png" alt="finallogo" />
+            </a>
         </div>
         <div id="social">
-
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square social"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram social"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fa fa-youtube-square social"></i>
+            </a>
         </div>
     </Header>
     <!--Header End-->
@@ -25,10 +35,117 @@
     <div id="listingContainer">
         <p class="listingHeading">Breakfast Places</p>
         <div class="filter">
-
+            <span class="mainHeading">
+                Filters
+            </span>
+            <div class="filterHeading location">
+                Select Location
+                <div class="filterSubHeading">
+                    <div class="dropdown">
+                        <select>
+                            <option>-----SELECT CITY-----</option>
+                            <option>Delhi</option>
+                            <option>Mumbai</option>
+                            <option>Pune</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="filterHeading">
+                Cuisine<br>
+                <div class="filterSubHeading">
+                    <input type="checkbox" id="cuisine1" name="cuisine1" value="northIndian"> North Indian<br>
+                    <input type="checkbox" id="cuisine2" name="cuisine2" value="southIndian"> South Indian<br>
+                    <input type="checkbox" id="cuisine3" name="cuisine3" value="chinese"> Chinese<br>
+                    <input type="checkbox" id="cuisine4" name="cuisine4" value="streetFood"> Street Food<br>
+                    <input type="checkbox" id="cuisine5" name="cuisine5" value="fastFood"> Fast Food<br>
+                </div>
+            </div>
+            <div class="filterHeading">
+                Cost For Two<br>
+                <div class="filterSubHeading">
+                    <input type="radio"> Less than &#x20B9; 500<br>
+                    <input type="radio"> &#x20B9; 500 to &#x20B9; 1000<br>
+                    <input type="radio"> &#x20B9; 1000 to &#x20B9; 1500<br>
+                    <input type="radio"> &#x20B9; 1500 to &#x20B9; 2000<br>
+                    <input type="radio"> &#x20B9; 2000 + <br>
+                </div>
+            </div>
+            <div class="sort">
+                <span class="mainHeading">
+                    Sort<br></span>
+                <div class="filterSubHeading sort2">
+                    <input type="radio"> Price Low to High<br>
+                    <input type="radio"> Price High to Low<br>
+                </div>
+            </div>
         </div>
         <div class="content">
-
+            <div class="tileContainer" style="margin-top:0%;">
+                <div class="tileComponent">
+                    <div class="tileComponent1">
+                        <img src="https://i.ibb.co/QXzv7vy/cuisine1.jpg" alt="cuisine1" />
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="shopName">The Big Chill Cakery</p>
+                        <p class="place">FORT</p>
+                        <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                    </div>
+                </div>
+                <div class="component"> 
+                    <div  class="componentInfo">
+                        <hr>
+                    <table>
+                        <tr>
+                            <td class="td1">CUISINES</th>
+                            <td class="td2">: Bakery</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">COST FOR TWO</th>
+                            <td class="td2">: ₹ 700</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="details">
+                        <a href="../Details/details.html"><input type="button" value="Details" name="Details" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent">
+                    <div class="tileComponent1">
+                        <img src="https://i.ibb.co/4RGLrVx/cuisine2.jpg" alt="cuisine2" />
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="shopName">The Bake Shop</p>
+                        <p class="place">FORT</p>
+                        <p class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                    </div>
+                </div>
+                <div class="componentInfo">
+                    <hr>
+                    <table>
+                        <tr>
+                            <td class="td1">CUISINES</th>
+                            <td class="td2">: Bakery</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">COST FOR TWO</th>
+                            <td class="td2">: ₹ 700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
         </div>
     </div>
     <!--ListingContainer  End-->

@@ -1,51 +1,265 @@
 body {
     margin: auto;
-    background-color: #faf8f6;
+    background-color: #e9d4a8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*--Header Start--*/
 #header {
     height: 60px;
-    background-color: #851010;
-
+    background-color: #edb265;
 }
 
 #icon {
     position: absolute;
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-top: 1px;
+}
+
+#social {
+    float: right;
+    margin-right: 2%;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.social {
+    font-size: 50px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-facebook-square:hover {
+    color: white !important;
+}
+
+.fa-instagram:hover {
+    color: white !important;
+}
+
+.fa-youtube-square:hover {
+    color: white !important;
 }
 
 /*--Header End--*/
 /*--ListingContainer Start--*/
 #listingContainer {
-    height: 800px;
+    height: 710px;
     width: 80%;
     margin-left: 10%;
 }
 
 .listingHeading {
-    font-family: cursive;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #192f60;
+    color: #691908;
 }
 
-.filter{
-    height: 500px;
-    width: 20%;
+/*--Filter Css--*/
+.filter {
+    height: 570px;
+    width: 25%;
     float: left;
-    border: 2px solid green;
+    padding-top: 5px;
+    box-shadow: 5px 5px 15px 2px rgb(136, 131, 131);
+    background-color: #faebca;
 }
 
-.content{
-    height: 650px;
-    width: 74%;
+.mainHeading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #691908;
+    margin-left: 10%;
+    line-height: 2.5;
+}
+
+.filterHeading {
+    font-size: 19px;
+    color: #5e190a;
+    margin-left: 10%;
+    padding-top: 5px;
+    line-height: 2;
+}
+
+.filterSubHeading {
+    font-size: 17px;
+    color: #a74833;
+    margin-left: 10%;
+    line-height: 1.4;
+}
+
+/*--Filter Css--*/
+/*--Content Css--*/
+.content {
+    height: 530px;
+    width: 69%;
     margin-left: 5%;
-    float: left;
-    border: 2px solid green;
+    display: inline-block;
+
 }
+
+.tileContainer {
+    height: 250px;
+    width: 98%;
+    float: left;
+    box-shadow: 5px 5px 15px 2px rgb(136, 131, 131);
+    margin-top: 2%;
+    background-color: #faebca;
+}
+
+.tileComponent1 {
+    width: 25%;
+    margin-left: 4%;
+    float: left;
+}
+
+.tileComponent1>img {
+    width: 85%;
+    height: 150px;
+    border-radius: 10% 10% 10% 10%;
+}
+
+.tileComponent2 {
+    width: 100%;
+    margin-left: 4%;
+    height: 150px;
+}
+
+.shopName {
+    font-size: 25px;
+    font-weight: 600;
+    color: #5e190a;
+    padding-top: 20px;
+}
+
+.place {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: #5e190a;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 1;
+    color: #5e190a;
+}
+.component{
+    display: inline-block;
+}
+.componentInfo {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.details{
+    float: right;
+    margin-right: 40%;
+    margin-top: -5%;
+}
+
+.td1 {
+    width: 150px;
+    font-size: 17px;
+    text-align: left;
+    color: #5e190a;
+}
+
+.td2 {
+    width: 150px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #5e190a;
+}
+
+/*--Content Css--*/
+/*--Pagination Css--*/
+.pagination {
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 20%;
+}
+
+.pagination>a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #5e190a;
+    margin-left: 10px;
+}
+
+.pagination>a.active {
+    background-color: #0ba310;
+    color: white;
+}
+
+.pagination>a:hover:not(.active) {
+    background-color: rgb(202, 44, 44);
+}
+
+/*--Pagination Css--*/
 /*--ListingContainer End--*/
+/*--Footer--*/
+footer {
+    padding-top: 1%;
+}
+/*--Footer End--*/
+/*-- Media Query -- */
+@media screen and (max-width:1600px) {}
+
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:1000px) {
+    #listingContainer {
+        display: inline-block;
+    }
+
+    .filter {
+        height: 30%;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .mainHeading {
+        margin-left: 4%;
+        float: left;
+    }
+
+    .filterHeading {
+        margin-left: 4%;
+        float: left;
+        padding-top: 40px;
+    }
+
+    .filterSubHeading {
+        margin-left: 0%;
+    }
+
+    .location {
+        margin-left: -9.2%;
+    }
+
+    .sort {
+        padding-top: 30px;
+    }
+
+    .sort2 {
+        margin-top: 6.5%;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width:800px) {}
+
+@media screen and (max-width:600px) {}

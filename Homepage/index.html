@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <script src="home.js"></script>
+
+    <script>
+        function changeMode() {
+            var mybody = document.body;
+            mybody.classList.toggle("mydark")
+        }
+    </script>
+    <title>Aru's...Satisfy Your Cravings</title>
+</head>
+
+<body>
+    <!--Header Start-->
+    <nav class="navbar sticky-top navbar-expand-md my-sm-0">
+        
+        <a class="navbar-brand ml-5" href="#"><img src="https://i.ibb.co/vYbtL4h/finallogo.png" alt="finallogo" />
+        </a>
+        
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-x-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="login" href="#"><i class="fas fa-sign-in-alt "><span id="ml">Login</span>
+
+                        </i> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="login" href="#"><i class="fas fa-user-plus "><span id="ml">SignUp</span>
+                        </i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Header End-->
+    
+    <!--Search Start-->
+    <div id="search">
+        <div id="logo">
+            <span>Aru's</span>
+        </div>
+        
+        <div id="heading">
+            Find the Best Restaurant Near You
+        </div>
+        <div class="dropdown">
+            <select id="city" onChange="getHotel()">
+                <option>Select City</option>
+            </select>
+            <select class="restaurantSelect" id="hotels">
+                <option>Select Restaurant</option>
+            </select>
+        </div>
+        <!--Coupon Start-->
+    <div id="coupon">
+        <button onclick="closeDiv()">&times;</button>
+    </div>
+    <!--Coupon End-->
+    </div>
+    <!--Search End-->
+    
+    <!--QuickSearch Start-->
+    <button onclick="changeMode()"><i class="fas fa-adjust"></i>
+    </button>
+    <div id="QuickSearch">
+        <span id="QuickHeading">
+            Quick Search
+        </span>
+        <span id="QuickSubHeading">
+            Discover Restaurants By type of Meal
+        </span>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top" src="https://i.ibb.co/wBJj9cX/breakfast.jpg" alt="breakfast"><a
+                                href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">Breakfast</h4>
+                                <p class="card-text">Exclusive options of Breakfast !</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top"
+                                src="https://i.ibb.co/7Jpt3JK/Vegetarian-Pappardelle-with-zucchini-and-eggplant-Fresh-vegetable-salad-with-sun-dried-tomato-spinac.jpg"
+                                alt="lunch"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Lunch</h4>
+                            <p class="card-text">Exclusive options of Lunch !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top" src="https://i.ibb.co/3kpMHSJ/dinner.jpg" alt="dinner"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Dinner</h4>
+                            <p class="card-text">Exclusive options of Dinner !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top" src="https://i.ibb.co/HT4t2Dk/Ketogenic-samosa-Quebec-Canada.jpg"
+                                alt="snacks"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Snacks</h4>
+                            <p class="card-text">Exclusive options of Snacks !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top" src="https://i.ibb.co/XXnVJQS/drinks.jpg" alt="drinks"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Drinks</h4>
+                            <p class="card-text">Exclusive options of Drinks !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="../RestaurantSearchPage/restaurantsearchpage.html" class="stretched-link"><img
+                                class="card-img-top" src="https://i.ibb.co/8cjYXkR/nightlife.jpg" alt="nightlife"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Nightlife</h4>
+                            <p class="card-text">Exclusive options of Nightlife !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--QuickSearch End-->
+    <footer>
+        <hr />
+        <center>
+            <h3>&copy; Aarti &hearts; All rights reserved.</h3>
+        </center>
+    </footer>
+    <script>
+        window.onload = offer();
+        window.onload = getCity();
+    </script>
+
+</body>
+
+</html>

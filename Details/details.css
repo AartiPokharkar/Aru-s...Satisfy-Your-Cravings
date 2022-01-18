@@ -1,0 +1,53 @@
+body {
+    margin: auto;
+    background-color: #e9d4a8;
+}
+
+/*--Header Start--*/
+#header {
+    height: 60px;
+    background-color: #edb265;
+
+}
+
+#icon {
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 1px;
+}
+
+#social {
+    float: right;
+    margin-right: 2%;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.social {
+    font-size: 50px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-facebook-square:hover {
+    color: white !important;
+}
+
+.fa-instagram:hover {
+    color: white !important;
+}
+
+.fa-youtube-square:hover {
+    color: white !important;
+}
+
+/*--Header End--*/
+
+/*--Footer--*/
+footer {
+    padding-top: 1%;
+}
+/*--Footer End--*/

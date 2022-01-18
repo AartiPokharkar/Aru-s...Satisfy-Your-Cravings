@@ -1,7 +1,3 @@
-/* 
-http://localhost:1298/city
- http://localhost:1298/category
-*/
 
 
 
@@ -13,8 +9,8 @@ function closeDiv(){
 }
 
 
-let url = "http://localhost:2003/city";
-let hotelUrl = "https://developerfunnel.herokuapp.com/hotels?city=";
+let url = "http://localhost:1497/city";
+let hotelUrl = "http://localhost:2003/hotels?city=";
 
 function getCity(){
     fetch(url)
